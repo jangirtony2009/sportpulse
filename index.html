@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SportPulse – Daily Sports News | Live Scores & Breaking Stories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta
+    name="description"
+    content="Stay updated with SportPulse - your ultimate destination for live sports scores, breaking news, and in-depth analysis from football, basketball, tennis, cricket and more."
+  />
+  <meta name="keywords" content="sports news, live scores, football, basketball, tennis, cricket, breaking sports stories, sports analysis" />
+  <meta name="author" content="SportPulse" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="EN" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sportpulse.com/" />
+  <meta property="og:title" content="SportPulse – Daily Sports News | Live Scores & Breaking Stories" />
+  <meta property="og:description" content="Stay updated with SportPulse - your ultimate destination for live sports scores, breaking news, and in-depth analysis from all major sports." />
+  <meta property="og:image" content="https://sportpulse.com/og-image.jpg" />
+  <meta property="og:site_name" content="SportPulse" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://sportpulse.com/" />
+  <meta property="twitter:title" content="SportPulse – Daily Sports News | Live Scores & Breaking Stories" />
+  <meta property="twitter:description" content="Stay updated with SportPulse - your ultimate destination for live sports scores, breaking news, and in-depth analysis from all major sports." />
+  <meta property="twitter:image" content="https://sportpulse.com/twitter-image.jpg" />
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#22c55e">
+  <meta name="theme-color" content="#020617">
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://images.pexels.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID', {
+      page_title: document.title,
+      page_location: window.location.href
+    });
+  </script>
+  
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "SportPulse",
+    "url": "https://sportpulse.com",
+    "logo": "https://sportpulse.com/logo.png",
+    "description": "Your ultimate destination for live sports scores, breaking news, and in-depth analysis",
+    "sameAs": [
+      "https://twitter.com/sportpulse",
+      "https://facebook.com/sportpulse"
+    ]
+  }
+  </script>
+
+  <!-- Later you can add your AdSense global script here if needed -->
+  <!-- 
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_ADSENSE_CLIENT_ID"
+          crossorigin="anonymous"></script>
+  -->
+</head>
+<body>
+  <div class="app" role="application" aria-label="SportPulse - Sports News Application">
+    <!-- Header / Navbar -->
+    <header class="header" role="banner">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true">SP</div>
+        <div class="brand-text">
+          <h1 class="brand-title">SportPulse</h1>
+          <div class="brand-subtitle" aria-label="Site tagline">
+            Live Scores • Breaking Stories • Deep Analysis
+          </div>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="search-input" role="search">
+          <span aria-hidden="true">🔍</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search matches, players, leagues..."
+            aria-label="Search sports news"
+            autocomplete="off"
+          />
+        </div>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+          <span class="theme-toggle-icon">🌙</span>
+          <span class="theme-toggle-text">Dark</span>
+        </button>
+
+        <div class="pill-live" role="status" aria-live="polite">
+          <span class="pill-live-dot" aria-hidden="true"></span>
+          <span>LIVE</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="main" role="main">
+      <!-- Main Content Area -->
+      <section id="mainContent" class="main-content" role="region" aria-label="News articles">
+        <!-- Content will be rendered by JS -->
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar" role="complementary" aria-label="Additional content">
+        <!-- Trending -->
+        <section class="sidebar-section" role="region" aria-labelledby="trending-heading">
+          <div class="sidebar-header">
+            <h3 id="trending-heading">Trending Now</h3>
+          </div>
+          <div id="trendingList" class="trending-list" role="list">
+            <!-- Trending items populated by JS -->
+          </div>
+        </section>
+
+        <!-- AdSense Sidebar Slot -->
+        <!-- ADSENSE-SLOT-SIDEBAR -->
+        <section class="sidebar-section ad-slot-sidebar">
+          <div class="ad-placeholder">
+            <span>Sidebar Ad Placeholder</span>
+            <small>Paste AdSense sidebar code here</small>
+          </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="sidebar-section" role="region" aria-labelledby="categories-heading">
+          <div class="sidebar-header">
+            <h3 id="categories-heading">Browse by Sport</h3>
+          </div>
+          <div id="categoryChips" class="category-chips" role="group" aria-label="Sport categories">
+            <!-- Category chips populated by JS -->
+          </div>
+        </section>
+
+        <!-- Upcoming Games -->
+        <section class="sidebar-section" role="region" aria-labelledby="games-heading">
+          <div class="sidebar-header">
+            <h3 id="games-heading">Next Big Games</h3>
+          </div>
+          <div class="upcoming-games" role="list">
+            <div class="game-item" role="listitem" tabindex="0" aria-label="Champions League: Real Madrid vs. Manchester City, Tonight 11:30 PM">
+              <div class="game-meta">
+                <span class="game-league">Champions League</span>
+                <span class="game-time">Tonight • 11:30 PM</span>
+              </div>
+              <div class="game-teams">Real Madrid vs. Manchester City</div>
+            </div>
+
+            <div class="game-item" role="listitem" tabindex="0" aria-label="NBA: Lakers vs. Warriors, Tomorrow 7:00 PM">
+              <div class="game-meta">
+                <span class="game-league">NBA</span>
+                <span class="game-time">Tomorrow • 7:00 PM</span>
+              </div>
+              <div class="game-teams">Lakers vs. Warriors</div>
+            </div>
+
+            <div class="game-item" role="listitem" tabindex="0" aria-label="Cricket T20: India vs. Australia, Sunday 4:00 PM">
+              <div class="game-meta">
+                <span class="game-league">Cricket – T20</span>
+                <span class="game-time">Sunday • 4:00 PM</span>
+              </div>
+              <div class="game-teams">India vs. Australia</div>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data/newsData.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
