@@ -1,59 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offline - SportPulse</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: system-ui, -apple-system, sans-serif;
-            background: #020617;
-            color: #f9fafb;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-        .offline-container {
-            max-width: 400px;
-            padding: 2rem;
-        }
-        .offline-icon {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-        }
-        h1 {
-            margin: 0 0 1rem 0;
-            color: #22c55e;
-        }
-        p {
-            color: #9ca3af;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-        }
-        .retry-button {
-            background: #22c55e;
-            color: white;
-            border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        .retry-button:hover {
-            background: #16a34a;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're Offline - GlowUp Beauty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --accent-primary: #f8b4cb;
+      --accent-secondary: #e6c9f0;
+      --text-primary: #2d2d2d;
+      --text-secondary: #6b7280;
+      --border-light: #f0f0f0;
+      --shadow-soft: 0 4px 20px rgba(248, 180, 203, 0.15);
+      --radius-lg: 16px;
+      --space-sm: 1rem;
+      --space-md: 1.5rem;
+      --space-lg: 2rem;
+      --space-xl: 3rem;
+      --font-body: 'Outfit', sans-serif;
+      --font-heading: 'Fraunces', serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-md);
+    }
+
+    .offline-container {
+      text-align: center;
+      max-width: 500px;
+      background: white;
+      padding: var(--space-xl);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--border-light);
+    }
+
+    .offline-icon {
+      font-size: 4rem;
+      margin-bottom: var(--space-lg);
+      display: block;
+    }
+
+    h1 {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      color: var(--text-primary);
+      margin-bottom: var(--space-md);
+    }
+
+    p {
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: var(--space-lg);
+    }
+
+    .offline-tips {
+      background: rgba(248, 180, 203, 0.1);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      margin: var(--space-lg) 0;
+      text-align: left;
+    }
+
+    .offline-tips h3 {
+      color: var(--accent-primary);
+      margin-bottom: var(--space-sm);
+      font-size: 1.1rem;
+    }
+
+    .offline-tips ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .offline-tips li {
+      margin-bottom: var(--space-sm);
+      padding-left: var(--space-md);
+      position: relative;
+    }
+
+    .offline-tips li:before {
+      content: '✨';
+      position: absolute;
+      left: 0;
+    }
+
+    .retry-btn {
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+      color: white;
+      padding: var(--space-sm) var(--space-lg);
+      border: none;
+      border-radius: 50px;
+      font-family: var(--font-body);
+      font-weight: 500;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .retry-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .brand-small {
+      margin-top: var(--space-lg);
+      padding-top: var(--space-lg);
+      border-top: 1px solid var(--border-light);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .loading {
+      display: none;
+      color: var(--accent-primary);
+      margin-top: var(--space-sm);
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--border-light);
+      border-radius: 50%;
+      border-top-color: var(--accent-primary);
+      animation: spin 1s ease-in-out infinite;
+      margin-right: var(--space-sm);
+    }
+  </style>
 </head>
 <body>
-    <div class="offline-container">
-        <div class="offline-icon">📡</div>
-        <h1>You're Offline</h1>
-        <p>It looks like you've lost your internet connection. Don't worry, we'll get you back to the latest sports news as soon as you're online again.</p>
-        <button class="retry-button" onclick="location.reload()">Try Again</button>
+  <div class="offline-container">
+    <div class="offline-icon">🌸</div>
+    
+    <h1>You're Offline</h1>
+    <p>It looks like you've lost your internet connection. Don't worry - your skincare routine doesn't need wifi! ✨</p>
+    
+    <div class="offline-tips">
+      <h3>💡 While you wait, try these offline beauty tips:</h3>
+      <ul>
+        <li>Drink a glass of water for instant skin hydration</li>
+        <li>Do a gentle face massage to boost circulation</li>
+        <li>Practice some relaxation breathing - stress affects your skin!</li>
+        <li>Check if you have any ingredients for a DIY face mask</li>
+      </ul>
     </div>
+    
+    <button class="retry-btn" onclick="retryConnection()">
+      Check Connection
+    </button>
+    
+    <div class="loading" id="loadingState">
+      <div class="spinner"></div>
+      Checking your connection...
+    </div>
+    
+    <div class="brand-small">
+      <strong>GlowUp Beauty</strong><br>
+      Expert skincare tips & beauty guides
+    </div>
+  </div>
+
+  <script>
+    function retryConnection() {
+      const button = document.querySelector('.retry-btn');
+      const loading = document.getElementById('loadingState');
+      
+      button.style.display = 'none';
+      loading.style.display = 'block';
+      
+      // Check if we're back online
+      if (navigator.onLine) {
+        // Try to fetch the main page
+        fetch('/', { cache: 'no-cache' })
+          .then(response => {
+            if (response.ok) {
+              window.location.href = '/';
+            } else {
+              showRetryButton();
+            }
+          })
+          .catch(() => {
+            showRetryButton();
+          });
+      } else {
+        setTimeout(showRetryButton, 2000);
+      }
+    }
+    
+    function showRetryButton() {
+      const button = document.querySelector('.retry-btn');
+      const loading = document.getElementById('loadingState');
+      
+      loading.style.display = 'none';
+      button.style.display = 'inline-block';
+    }
+    
+    // Auto-retry when connection is restored
+    window.addEventListener('online', () => {
+      setTimeout(() => {
+        window.location.href = '/';
+      }, 1000);
+    });
+    
+    // Update UI based on online status
+    window.addEventListener('offline', () => {
+      console.log('Connection lost');
+    });
+  </script>
 </body>
 </html>
