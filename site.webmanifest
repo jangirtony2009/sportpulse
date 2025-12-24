@@ -11,7 +11,7 @@
     },
     {
       "src": "/android-chrome-512x512.png",
-      "sizes": "512x512", 
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
     },
@@ -37,7 +37,7 @@
       "form_factor": "narrow"
     },
     {
-      "src": "/screenshot-desktop.png", 
+      "src": "/screenshot-desktop.png",
       "sizes": "1200x800",
       "type": "image/png",
       "form_factor": "wide"
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "name": "Product Guide", 
+      "name": "Product Guide",
       "short_name": "Products",
       "description": "Browse curated product recommendations",
       "url": "/#products",
@@ -70,7 +70,7 @@
     },
     {
       "name": "Skin Quiz",
-      "short_name": "Quiz", 
+      "short_name": "Quiz",
       "description": "Find your perfect skincare routine",
       "url": "/#quiz",
       "icons": [
@@ -79,27 +79,6 @@
           "sizes": "96x96"
         }
       ]
-    }
-  ]
-}
-  "start_url": "/",
-  "scope": "/",
-  "categories": ["news", "sports", "entertainment"],
-  "lang": "en",
-  "shortcuts": [
-    {
-      "name": "Breaking News",
-      "short_name": "Breaking",
-      "description": "View latest breaking sports news",
-      "url": "/?category=breaking",
-      "icons": [{ "src": "/android-chrome-192x192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "Live Scores",
-      "short_name": "Scores",
-      "description": "Check live sports scores",
-      "url": "/?view=scores",
-      "icons": [{ "src": "/android-chrome-192x192.png", "sizes": "192x192" }]
     }
   ]
 }
