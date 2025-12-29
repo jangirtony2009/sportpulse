@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-label="GlowUp Beauty mobile preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff1e7" />
+      <stop offset="1" stop-color="#f8f4ef" />
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2b190" />
+      <stop offset="1" stop-color="#e77a66" />
+    </linearGradient>
+  </defs>
+  <rect width="390" height="844" fill="url(#bg)" />
+  <rect x="28" y="40" width="334" height="64" rx="24" fill="#ffffff" opacity="0.95" />
+  <text x="52" y="82" font-family="'Fraunces', serif" font-size="24" fill="#2a201c">GlowUp</text>
+  <text x="190" y="82" font-family="'Outfit', Arial, sans-serif" font-size="16" fill="#8f817a">Beauty</text>
+  <rect x="28" y="128" width="334" height="220" rx="28" fill="url(#card)" />
+  <text x="52" y="200" font-family="'Fraunces', serif" font-size="26" fill="#fff8f2">Discover Your</text>
+  <text x="52" y="234" font-family="'Fraunces', serif" font-size="28" fill="#fff8f2">Best Skin</text>
+  <rect x="28" y="380" width="334" height="140" rx="22" fill="#ffffff" />
+  <rect x="44" y="402" width="180" height="12" rx="6" fill="#e77a66" />
+  <rect x="44" y="424" width="260" height="10" rx="5" fill="#ead7c8" />
+  <rect x="28" y="546" width="334" height="140" rx="22" fill="#ffffff" />
+  <rect x="44" y="568" width="200" height="12" rx="6" fill="#e77a66" />
+  <rect x="44" y="590" width="240" height="10" rx="5" fill="#ead7c8" />
+  <rect x="28" y="712" width="334" height="96" rx="20" fill="#ffffff" />
+  <text x="44" y="770" font-family="'Outfit', Arial, sans-serif" font-size="14" fill="#8f817a">GlowUp Beauty mobile preview</text>
+</svg>

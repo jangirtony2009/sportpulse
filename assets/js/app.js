@@ -40,17 +40,20 @@ function setupEventListeners() {
   // Navigation links
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const section = link.dataset.section;
-      handleNavigation(section);
-      
-      // Update active state
-      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-      link.classList.add('active');
-      
-      // Close mobile menu
-      navMenu?.classList.remove('active');
-      mobileToggle?.classList.remove('active');
+      const href = link.getAttribute('href') || '';
+      if (href.startsWith('#')) {
+        e.preventDefault();
+        const section = link.dataset.section;
+        handleNavigation(section);
+        
+        // Update active state
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+        
+        // Close mobile menu
+        navMenu?.classList.remove('active');
+        mobileToggle?.classList.remove('active');
+      }
     });
   });
 

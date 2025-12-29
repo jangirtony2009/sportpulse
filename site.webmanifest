@@ -4,21 +4,16 @@
   "description": "Expert skincare routines, beauty tips, and wellness guides for radiant, healthy skin at every age",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "/assets/branding/icon-192.svg",
       "sizes": "192x192",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "maskable any"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "/assets/branding/icon-512.svg",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "maskable any"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
     }
   ],
   "theme_color": "#f8b4cb",
@@ -31,15 +26,15 @@
   "categories": ["lifestyle", "beauty", "health", "wellness"],
   "screenshots": [
     {
-      "src": "/screenshot-mobile.png",
+      "src": "/assets/branding/screenshot-mobile.svg",
       "sizes": "390x844",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "form_factor": "narrow"
     },
     {
-      "src": "/screenshot-desktop.png",
+      "src": "/assets/branding/screenshot-desktop.svg",
       "sizes": "1200x800",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "form_factor": "wide"
     }
   ],
@@ -51,8 +46,9 @@
       "url": "/#blog",
       "icons": [
         {
-          "src": "/shortcut-articles.png",
-          "sizes": "96x96"
+          "src": "/assets/branding/shortcut-articles.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
         }
       ]
     },
@@ -63,8 +59,9 @@
       "url": "/#products",
       "icons": [
         {
-          "src": "/shortcut-products.png",
-          "sizes": "96x96"
+          "src": "/assets/branding/shortcut-products.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
         }
       ]
     },
@@ -75,8 +72,9 @@
       "url": "/#quiz",
       "icons": [
         {
-          "src": "/shortcut-quiz.png",
-          "sizes": "96x96"
+          "src": "/assets/branding/shortcut-quiz.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
         }
       ]
     }

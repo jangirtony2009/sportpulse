@@ -2,8 +2,8 @@ const CACHE_NAME = 'glowup-beauty-v1.0.0';
 const urlsToCache = [
   '/',
   '/assets/css/styles.css',
-  '/script.js',
-  '/data/newsData.js',
+  '/assets/js/app.js',
+  '/assets/data/newsData.js',
   '/site.webmanifest',
   '/offline.html'
 ];
@@ -61,7 +61,7 @@ self.addEventListener('fetch', (event) => {
   if (url.pathname.endsWith('.css') || url.pathname.endsWith('.js')) {
     // Cache-first for static assets
     event.respondWith(cacheFirst(request));
-  } else if (url.pathname.includes('/data/') || url.pathname === '/') {
+  } else if (url.pathname.includes('/assets/data/') || url.pathname === '/') {
     // Network-first for content and data
     event.respondWith(networkFirst(request));
   } else if (url.hostname.includes('unsplash.com') || url.hostname.includes('images.')) {
@@ -269,11 +269,11 @@ self.addEventListener('sync', (event) => {
   if (event.tag === 'background-sync') {
     event.waitUntil(
       // Update news data in the background
-      fetch('/data/newsData.js')
+      fetch('/assets/data/newsData.js')
         .then(response => response.text())
         .then(data => {
           return caches.open(CACHE_NAME)
-            .then(cache => cache.put('/data/newsData.js', new Response(data)));
+            .then(cache => cache.put('/assets/data/newsData.js', new Response(data)));
         })
         .catch(err => console.log('Background sync failed:', err))
     );

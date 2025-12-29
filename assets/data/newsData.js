@@ -17,7 +17,7 @@ const newsData = [
     isFeatured: true,
     isTrending: true,
     readTime: "8 min read",
-    articleUrl: "korean-skincare-routine-guide.html"
+    articleUrl: "pages/korean-skincare-routine-guide.html"
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ const newsData = [
     isFeatured: true,
     isTrending: false,
     readTime: "6 min read",
-    articleUrl: "retinol-vs-retinoids-guide.html"
+    articleUrl: "pages/retinol-vs-retinoids-guide.html"
   },
   {
     id: 3,
@@ -55,7 +55,7 @@ const newsData = [
     isFeatured: false,
     isTrending: true,
     readTime: "5 min read",
-    articleUrl: "diy-face-masks-guide.html"
+    articleUrl: "pages/diy-face-masks-guide.html"
   },
   {
     id: 4,
@@ -74,7 +74,7 @@ const newsData = [
     isFeatured: false,
     isTrending: true,
     readTime: "7 min read",
-    articleUrl: "hormonal-acne-treatment-guide.html"
+    articleUrl: "pages/hormonal-acne-treatment-guide.html"
   },
   {
     id: 5,
@@ -93,7 +93,7 @@ const newsData = [
     isFeatured: true,
     isTrending: false,
     readTime: "6 min read",
-    articleUrl: "retinol-vs-retinoids-guide.html"
+    articleUrl: "pages/retinol-vs-retinoids-guide.html"
   },
   {
     id: 6,
@@ -112,7 +112,7 @@ const newsData = [
     isFeatured: false,
     isTrending: false,
     readTime: "5 min read",
-    articleUrl: "diy-face-masks-guide.html"
+    articleUrl: "pages/diy-face-masks-guide.html"
   },
   {
     id: 7,
@@ -131,7 +131,7 @@ const newsData = [
     isFeatured: false,
     isTrending: true,
     readTime: "4 min read",
-    articleUrl: "korean-skincare-routine-guide.html"
+    articleUrl: "pages/korean-skincare-routine-guide.html"
   },
   {
     id: 8,
@@ -150,7 +150,7 @@ const newsData = [
     isFeatured: true,
     isTrending: false,
     readTime: "5 min read",
-    articleUrl: "hormonal-acne-treatment-guide.html"
+    articleUrl: "pages/hormonal-acne-treatment-guide.html"
   }
 ];
 

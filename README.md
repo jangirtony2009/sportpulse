@@ -47,7 +47,7 @@ A mobile-first, lightweight skincare and beauty blog website focused on publishi
 ```
 ├── index.html          # Main homepage
 ├── styles.css          # Complete CSS styling
-├── script.js           # All JavaScript functionality
+├── assets/js/app.js    # All JavaScript functionality
 ├── offline.html        # PWA offline fallback page
 ├── sw.js              # Service worker for caching
 ├── site.webmanifest   # PWA manifest
@@ -59,7 +59,7 @@ A mobile-first, lightweight skincare and beauty blog website focused on publishi
 
 1. **Clone or download** the project files
 2. **Update Google AdSense** - Replace `ca-pub-XXXXXXXXXXXXXXXX` with your AdSense publisher ID
-3. **Customize content** - Edit articles in `data/newsData.js`
+3. **Customize content** - Edit articles in `assets/data/newsData.js`
 4. **Configure analytics** - Update Google Analytics ID in `index.html`
 5. **Upload to web server** - Deploy to any web hosting service
 
@@ -67,7 +67,7 @@ A mobile-first, lightweight skincare and beauty blog website focused on publishi
 
 ### Adding New Articles
 
-Edit `data/newsData.js` to add new skincare articles:
+Edit `assets/data/newsData.js` to add new skincare articles:
 
 ```javascript
 {
