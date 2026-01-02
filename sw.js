@@ -1,4 +1,4 @@
-const CACHE_NAME = 'glowup-beauty-v1.0.0';
+const CACHE_NAME = 'skincare-insights-v2.0.0';
 const urlsToCache = [
   '/',
   '/assets/css/styles.css',
@@ -13,7 +13,7 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => {
-        console.log('GlowUp Beauty cache opened');
+        console.log('Skincare Insights cache opened');
         return cache.addAll(urlsToCache);
       })
       .then(() => {
@@ -183,14 +183,14 @@ self.addEventListener('push', (event) => {
     body: data.body || 'New skincare tips available!',
     icon: '/android-chrome-192x192.png',
     badge: '/android-chrome-192x192.png',
-    tag: 'glowup-beauty-notification',
+    tag: 'skincare-insights-notification',
     data: {
       url: data.url || '/'
     }
   };
 
   event.waitUntil(
-    self.registration.showNotification(data.title || 'GlowUp Beauty', options)
+    self.registration.showNotification(data.title || 'Skincare Insights', options)
   );
 });
 

@@ -509,25 +509,54 @@ function initializeTheme() {
   }
 }
 
-// Lazy loading for images
+// Lazy loading for images with performance optimizations
 function initializeLazyLoading() {
   if ('IntersectionObserver' in window) {
     const imageObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const img = entry.target;
-          img.src = img.dataset.src || img.src;
-          img.classList.remove('lazy-image');
-          img.classList.add('loaded');
+          
+          // Performance: Create a new image to load in background
+          const newImg = new Image();
+          newImg.onload = function() {
+            img.src = img.dataset.src || img.src;
+            img.classList.remove('lazy-image');
+            img.classList.add('loaded');
+            
+            // Optimize for Core Web Vitals
+            requestAnimationFrame(() => {
+              img.removeAttribute('data-src');
+              img.decoding = 'async';
+            });
+          };
+          
+          newImg.src = img.dataset.src || img.src;
           observer.unobserve(img);
         }
       });
+    }, {
+      // Performance: Load images before they enter viewport
+      rootMargin: '50px 0px',
+      threshold: 0.01
     });
 
-    // Observe all images
-    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+    // Observe all images with better selection
+    document.querySelectorAll('img[loading="lazy"], img[data-src]').forEach(img => {
       img.classList.add('lazy-image');
+      
+      // Add loading placeholder for better UX
+      if (!img.src || img.src === '') {
+        img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1" height="1"%3E%3C/svg%3E';
+      }
+      
       imageObserver.observe(img);
+    });
+  } else {
+    // Fallback for browsers without IntersectionObserver
+    document.querySelectorAll('img[data-src]').forEach(img => {
+      img.src = img.dataset.src;
+      img.classList.add('loaded');
     });
   }
 }
@@ -693,7 +722,7 @@ function showContactSection() {
       <h2>Get In Touch</h2>
       <p>Have questions about skincare? Want to collaborate? We'd love to hear from you!</p>
       <div class="contact-info">
-        <p>📧 Email: hello@glowupbeauty.com</p>
+        <p>📧 Email: jangirvikas2009@gmail.com</p>
         <p>📱 Social: @glowupbeauty on Instagram & TikTok</p>
         <p>💌 Newsletter: Subscribe above for weekly beauty tips</p>
       </div>

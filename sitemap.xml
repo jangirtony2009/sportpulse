@@ -1,48 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://glowupbeauty.com/</loc>
+    <loc>https://www.skincareinsights.info/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Main Pages -->
   <url>
-    <loc>https://glowupbeauty.com/pages/korean-skincare-routine-guide.html</loc>
+    <loc>https://www.skincareinsights.info/pages/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/privacy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/terms.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/cookie-policy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Original Articles -->
+  <url>
+    <loc>https://www.skincareinsights.info/pages/korean-skincare-routine-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/retinol-vs-retinoids-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/diy-face-masks-guide.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://glowupbeauty.com/pages/retinol-vs-retinoids-guide.html</loc>
+    <loc>https://www.skincareinsights.info/pages/hormonal-acne-treatment-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- New Comprehensive Articles -->
+  <url>
+    <loc>https://www.skincareinsights.info/pages/complete-guide-to-skin-types.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/daily-skincare-routine-beginners.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/morning-vs-night-skincare-routine.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://glowupbeauty.com/pages/diy-face-masks-guide.html</loc>
+    <loc>https://www.skincareinsights.info/pages/common-skincare-ingredients-guide.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://glowupbeauty.com/pages/hormonal-acne-treatment-guide.html</loc>
+    <loc>https://www.skincareinsights.info/pages/build-simple-skincare-routine-home.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://glowupbeauty.com/pages/privacy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <loc>https://www.skincareinsights.info/pages/common-skincare-mistakes-damage-skin.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://glowupbeauty.com/pages/terms.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <loc>https://www.skincareinsights.info/pages/best-skincare-products-acne-prone-skin.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://glowupbeauty.com/pages/about.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://www.skincareinsights.info/pages/choose-right-moisturizer-skin-type.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://glowupbeauty.com/pages/contact.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://www.skincareinsights.info/pages/ultimate-guide-sunscreen-protection-prevention.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/natural-skincare-ingredients-benefits-diy-recipes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/anti-aging-skincare-products-techniques.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/skincare-sensitive-skin-gentle-products-routines.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Latest 8 Articles -->
+  <url>
+    <loc>https://www.skincareinsights.info/pages/treat-dark-spots-hyperpigmentation.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/skincare-ingredient-science-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/seasonal-skincare-adaptation-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/skincare-myths-debunked-experts.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/layer-skincare-products-maximum-effectiveness.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/budget-skincare-affordable-products-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/diet-lifestyle-healthy-skin-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.skincareinsights.info/pages/professional-vs-home-skincare-treatments.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
+    <lastmod>2025-01-02</lastmod>
+  </url>
+  <url>
+    <loc>https://glowupbeauty.com/pages/daily-skincare-routine-beginners.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-01-02</lastmod>
+  </url>
+  <url>
+    <loc>https://glowupbeauty.com/pages/morning-vs-night-skincare-routine.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-02</lastmod>
+  </url>
+  <url>
+    <loc>https://glowupbeauty.com/pages/common-skincare-ingredients-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-02</lastmod>
+  </url></urlset>
